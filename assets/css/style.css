@@ -34,11 +34,11 @@ a.nav-link:link {
 }
 
 a.nav-link:hover {
-  color: #99ccff;
+  color: #1976d2;
 }
 
 a.nav-link:active {
-  color: #99ccff;
+  color: #1976d2;
 }
 
 .padding-title {
@@ -89,4 +89,8 @@ a.nav-link:active {
 .margin-right-left {
   margin-right: 5px;
   margin-left: 5px;
+}
+
+.footer-name {
+  font-size: 1.8em;
 }
