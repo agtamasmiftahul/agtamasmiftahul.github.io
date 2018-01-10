@@ -9,38 +9,109 @@
 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
 
-  <!-- Lato Font -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <!-- Quicksand Font -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+
   <body>
     <div class="row">
       <div class="col s12 no-padding">
-        <header class="bg-header">
+        <header class="full-cover">
           <center>
             <a class="navbar-brand" href="http://agtamasmiftahul.github.io">
-              <img class="responsive-img" src="assets/img/brand.png" width="500" alt="">
+              <img class="responsive-img" src="./assets/img/brand.png" width="500" alt="Logo Messi">
             </a>
             <nav>
-              <div class="nav-wrapper bg-navbar">
-                <a class="nav-link" href="">About Me</a>
-                <a class="nav-link" href="">What I Do</a>
-                <a class="nav-link" href="">Portofolio</a>
+              <div class="nav-wrapper blue lighten-1">
+                <a data-scroll class="nav-link" href="#about">About Me</a>
+                <a data-scroll class="nav-link" href="#what-i-do">What I Do</a>
+                <a data-scroll class="nav-link" href="#portofolio">Portofolio</a>
               </div>
             </nav>
           </center>
         </header>
+        <section id="about">
+          <div class="row">
+            <h1 class="center font-bold padding-title">About Me</h1>
+            <div class="col s12 m1 offset-m5">
+              <h5 class="font-profile font-bold">Full Name </h5>
+              <h5 class="font-profile font-bold">Nick Name </h5>
+              <h5 class="font-profile font-bold">Location </h5>
+              <h5 class="font-profile font-bold">Organization </h5>
+            </div>
+            <div class="col s12 m4">
+              <h5 class="font-profile">Miftahul Agtamas Fidyawan</h5>
+              <h5 class="font-profile">Miftahul</h5>
+              <h5 class="font-profile">Jakarta, Indonesia</h5>
+              <h5 class="font-profile">Impact Byte Brave Bahamut</h5>
+            </div>
+          </div>
+        </section>
+        <section id="what-i-do">
+          <div class="row grey lighten-5">
+            <h1 class="center font-bold padding-title">What I Do</h1>
+            <div class="col s12 m2 offset-m1">
+              <div class="card-panel">
+                <div class="row center">
+                  <i class="large material-icons">dashboard</i>
+                  <p>Web Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m2">
+              <div class="card-panel">
+                <div class="row center">
+                  <i class="large material-icons">code</i>
+                  <p>Programming</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m2">
+              <div class="card-panel">
+                <div class="row center">
+                  <i class="large material-icons">build</i>
+                  <p>Develop Application</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m2">
+              <div class="card-panel">
+                <div class="row center">
+                  <i class="large material-icons">create</i>
+                  <p>Write Documentation</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m2">
+              <div class="card-panel">
+                <div class="row center">
+                  <i class="large material-icons">done_all</i>
+                  <p>Testing Application</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
     <!-- Optional Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="dist/js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 
 </html>
