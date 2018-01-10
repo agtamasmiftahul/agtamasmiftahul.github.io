@@ -22,7 +22,7 @@ body {
 }
 
 .profile-picture {
-  width: 200px;
+  width: 120px;
 }
 
 a.nav-link:link {
@@ -52,4 +52,9 @@ a.nav-link:active {
 
 .font-profile {
   font-size: 1.0em;
+}
+
+.icon:hover i {
+  color: #42a5f5;
+  cursor: default;
 }
