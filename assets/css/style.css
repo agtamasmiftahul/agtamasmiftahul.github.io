@@ -74,4 +74,19 @@ a.nav-link:active {
 
 .text-justify {
   text-align: justify;
+  line-height: 25px;
+}
+
+.padding-right-left {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.margin-top-social {
+  margin-top: 20px;
+}
+
+.margin-right-left {
+  margin-right: 5px;
+  margin-left: 5px;
 }
