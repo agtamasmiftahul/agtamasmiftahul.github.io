@@ -1,3 +1,7 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -8,4 +12,12 @@
 
 .bg-navbar {
   background: #5588ff;
+}
+
+a.nav-link:link {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.0em;
 }
