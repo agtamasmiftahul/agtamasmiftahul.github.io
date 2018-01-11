@@ -32,8 +32,8 @@
       <header class="full-cover">
         <center>
           <img class="responsive-img" src="./assets/img/logo.png" width="600" alt="Logo">
-          <nav>
-            <div class="nav-wrapper blue lighten-1">
+          <nav class="hide-on-small-only">
+            <div class="nav-wrapper blue lighten-1 hide-on-small-only">
               <a data-scroll class="nav-link" href="#about">About Me</a>
               <a data-scroll class="nav-link" href="#my-interests">My Interests</a>
               <a data-scroll class="nav-link" href="#portofolio">Portofolio</a>
@@ -42,6 +42,26 @@
           </nav>
         </center>
       </header>
+      <div class="nav-wrapper blue center hide-on-med-and-up">
+        <a href="#" data-activates="mobile-demo" class="button-collapse white-text font-bold">EXPLORE</a>
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+            <h5 class="font-bold">Menu</h5>
+          </li>
+          <li>
+            <a data-scroll class="nav-link" href="#about">About Me</a>
+          </li>
+          <li>
+            <a data-scroll class="nav-link" href="#my-interests">My Interests</a>
+          </li>
+          <li>
+            <a data-scroll class="nav-link" href="#portofolio">Portofolio</a>
+          </li>
+          <li>
+            <a data-scroll class="nav-link modal-trigger" href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </div>
       <section id="about" class="padding-section">
         <div class="row">
           <h2 class="center font-bold">About Me</h2>
