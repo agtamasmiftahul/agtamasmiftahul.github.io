@@ -94,3 +94,7 @@ a.nav-link:active {
 .footer-name {
   font-size: 1.8em;
 }
+
+.bottom-sheet {
+  max-height: 75% !important;
+}
