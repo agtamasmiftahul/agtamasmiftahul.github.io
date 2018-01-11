@@ -36,6 +36,7 @@
                 <a data-scroll class="nav-link" href="#about">About Me</a>
                 <a data-scroll class="nav-link" href="#my-interests">My Interests</a>
                 <a data-scroll class="nav-link" href="#portofolio">Portofolio</a>
+                <a data-scroll class="nav-link modal-trigger" href="#contact-me">Contact Me</a>
               </div>
             </nav>
           </center>
@@ -46,19 +47,19 @@
             <div class="col s12 m2 offset-m3 center">
               <img src="./assets/img/profile.jpg" class="circle profile-picture" alt="Profile Picture">
             </div>
-            <div class="col s12 m1">
+            <div class="col s6 m1">
               <h5 class="font-profile font-bold">Full Name </h5>
               <h5 class="font-profile font-bold">Nick Name </h5>
               <h5 class="font-profile font-bold">Location </h5>
               <h5 class="font-profile font-bold">Organization </h5>
             </div>
-            <div class="col s12 m4">
+            <div class="col s6 m4">
               <h5 class="font-profile">Miftahul Agtamas Fidyawan</h5>
               <h5 class="font-profile">Miftahul</h5>
               <h5 class="font-profile">Jakarta, Indonesia</h5>
               <h5 class="font-profile">Impact Byte Brave Bahamut</h5>
             </div>
-            <div class="col m12 center margin-top-social">
+            <div class="col s12 m12 center margin-top-social">
               <a class="btn-floating blue darken-4 margin-right-left" href="http://bit.ly/2EtTSZk" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a class="btn-floating yellow darken-1 margin-right-left" href="http://bit.ly/2qOJyJx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
               <a class="btn-floating green margin-right-left" href="http://bit.ly/2DgiqWm" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
@@ -118,7 +119,7 @@
             <div class="col s12 m10 offset-m1">
               <div class="card-panel icon">
                 <div class="row center">
-                  <div class="col s3">
+                  <div class="col s12 m3">
                     <p class="font-portofolio font-bold">Web Design</p>
                     <img src="./assets/img/web-design.jpg" alt="Web Design">
                     <p class="text-justify padding-right-left">
@@ -126,7 +127,7 @@
                       survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </p>
                   </div>
-                  <div class="col s3">
+                  <div class="col s12 m3">
                     <p class="font-portofolio font-bold">Linux Installation</p>
                     <img src="./assets/img/linux.png" alt="Linux">
                     <p class="text-justify padding-right-left">
@@ -134,7 +135,7 @@
                       content here', making it look like readable English.
                     </p>
                   </div>
-                  <div class="col s3">
+                  <div class="col s12 m3">
                     <p class="font-portofolio font-bold">Twitter Sentiment Analysis</p>
                     <img src="./assets/img/twitter-sentiment.png" alt="Twitter Sentiment Analysis">
                     <p class="text-justify padding-right-left">
@@ -142,7 +143,7 @@
                       one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
                     </p>
                   </div>
-                  <div class="col s3">
+                  <div class="col s12 m3">
                     <p class="font-portofolio font-bold">Mobile Programming</p>
                     <img src="./assets/img/mobile-programming.jpg" alt="Mobile Programming">
                     <p class="text-justify padding-right-left">
@@ -162,12 +163,54 @@
             <p>All rights reserved</p>
           </span>
         </footer>
+
+        <!-- Modal Structure -->
+        <div id="contact-me" class="modal bottom-sheet">
+          <div class="modal-content">
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <h4 class="center">Contact Me</h4>
+                  <div class="input-field col s12 m6 offset-m3">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">First Name</label>
+                  </div>
+                  <div class="input-field col s12 m6 offset-m3">
+                    <i class="material-icons prefix">title</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Subject</label>
+                  </div>
+                  <div class="input-field col s12 m6 offset-m3">
+                    <i class="material-icons prefix">mail</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">E-mail</label>
+                  </div>
+                  <div class="input-field col s12 m6 offset-m3">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="icon_prefix2">Message</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="center col s12 m6 offset-m3">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
     <!-- Optional Javascript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.modal').modal();
+      });
+    </script>
   </body>
 
 </html>
