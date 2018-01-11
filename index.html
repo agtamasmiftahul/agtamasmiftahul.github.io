@@ -166,29 +166,29 @@
                   <h4 class="center">Contact Me</h4>
                   <div class="input-field col s12 m6 offset-m3">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Full Name</label>
+                    <input id="icon_name" type="text" class="validate" required>
+                    <label for="icon_name" data-error="Fill your name" data-success="Good">Full Name</label>
                   </div>
                   <div class="input-field col s12 m6 offset-m3">
                     <i class="material-icons prefix">title</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Subject</label>
+                    <input id="icon_subject" type="text" class="validate" required>
+                    <label for="icon_subject" data-error="Fill your subject" data-success="Good">Subject</label>
                   </div>
                   <div class="input-field col s12 m6 offset-m3">
                     <i class="material-icons prefix">mail</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">E-mail</label>
+                    <input id="icon_email" type="email" class="validate" required>
+                    <label for="icon_email" data-error="Invalid Format" data-success="Good">E-mail</label>
                   </div>
                   <div class="input-field col s12 m6 offset-m3">
                     <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Message</label>
+                    <textarea id="icon_message" class="materialize-textarea"></textarea>
+                    <label for="icon_message">Message</label>
                   </div>
                 </div>
               </form>
             </div>
             <div class="center col s12 m6 offset-m3">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat font-bold">Send</a>
+              <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat font-bold">Send</a>
             </div>
           </div>
         </div>
@@ -213,14 +213,15 @@
     <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.modal').modal();
+        var scroll = new SmoothScroll('a[href*="#"]');
       });
     </script>
     <script type="text/javascript">
       $(document).ready(function() {
-        var scroll = new SmoothScroll('a[href*="#"]');
+        $('.modal').modal();
       });
     </script>
+
   </body>
 
 </html>
