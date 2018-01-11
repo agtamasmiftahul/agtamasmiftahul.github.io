@@ -30,7 +30,7 @@
       <div class="col s12 no-padding">
         <header class="full-cover">
           <center>
-            <img class="responsive-img" src="./assets/img/brand.png" width="500" alt="Logo Messi">
+            <img class="responsive-img" src="./assets/img/logo.png" width="600" alt="Logo">
             <nav>
               <div class="nav-wrapper blue lighten-1">
                 <a data-scroll class="nav-link" href="#about">About Me</a>
@@ -60,11 +60,11 @@
               <h5 class="font-profile">Impact Byte Brave Bahamut</h5>
             </div>
             <div class="col s12 m12 center margin-top-social">
-              <a class="btn-floating blue darken-4 margin-right-left" href="http://bit.ly/2EtTSZk" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a class="btn-floating yellow darken-1 margin-right-left" href="http://bit.ly/2qOJyJx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a class="btn-floating green margin-right-left" href="http://bit.ly/2DgiqWm" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-              <a class="btn-floating blue margin-right-left" href="http://bit.ly/2CM6Npn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a class="btn-floating red margin-right-left" href="mailto:agtamasmiftahul37@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+              <a class="btn-floating blue darken-4 margin-right-left waves-effect" href="http://bit.ly/2EtTSZk" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="btn-floating yellow darken-1 margin-right-left waves-effect" href="http://bit.ly/2qOJyJx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a class="btn-floating green margin-right-left waves-effect" href="http://bit.ly/2DgiqWm" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+              <a class="btn-floating blue margin-right-left waves-effect" href="http://bit.ly/2CM6Npn" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a class="btn-floating red margin-right-left waves-effect" href="mailto:agtamasmiftahul37@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
             </div>
           </div>
         </section>
@@ -195,10 +195,9 @@
               </form>
             </div>
             <div class="center col s12 m6 offset-m3">
-              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Send</a>
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat font-bold">Send</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -206,9 +205,15 @@
     <!-- Optional Javascript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $('.modal').modal();
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var scroll = new SmoothScroll('a[href*="#"]');
       });
     </script>
   </body>
